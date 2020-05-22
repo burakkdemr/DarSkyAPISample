@@ -14,6 +14,11 @@
 		67192ECB2478400300219CAA /* DarkSkyAPISample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67192EC92478400300219CAA /* DarkSkyAPISample.xcdatamodeld */; };
 		67192ECD2478400500219CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67192ECC2478400500219CAA /* Assets.xcassets */; };
 		67192ED02478400500219CAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67192ECE2478400500219CAA /* LaunchScreen.storyboard */; };
+		67192ED92478620A00219CAA /* HourlyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67192ED82478620A00219CAA /* HourlyCollectionViewCell.swift */; };
+		67192EDC2478627100219CAA /* DailyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67192EDB2478627100219CAA /* DailyTableViewCell.swift */; };
+		67D692312478656C00A8567C /* ViewContoller + Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D692302478656C00A8567C /* ViewContoller + Table.swift */; };
+		67D692332478661300A8567C /* ViewContoller + Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D692322478661300A8567C /* ViewContoller + Collection.swift */; };
+		67D69235247867E800A8567C /* ViewController + Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D69234247867E800A8567C /* ViewController + Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		67192ECC2478400500219CAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67192ECF2478400500219CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67192ED12478400500219CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67192ED82478620A00219CAA /* HourlyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyCollectionViewCell.swift; sourceTree = "<group>"; };
+		67192EDB2478627100219CAA /* DailyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTableViewCell.swift; sourceTree = "<group>"; };
+		67D692302478656C00A8567C /* ViewContoller + Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewContoller + Table.swift"; sourceTree = "<group>"; };
+		67D692322478661300A8567C /* ViewContoller + Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewContoller + Collection.swift"; sourceTree = "<group>"; };
+		67D69234247867E800A8567C /* ViewController + Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + Search.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +68,11 @@
 		67192EBF2478400300219CAA /* DarkSkyAPISample */ = {
 			isa = PBXGroup;
 			children = (
+				67192EDE247862D800219CAA /* Contoller */,
+				67192EDD247862CE00219CAA /* View */,
+				67D6922F247864F700A8567C /* Extensions */,
 				67192EC02478400300219CAA /* AppDelegate.swift */,
 				67192EC22478400300219CAA /* SceneDelegate.swift */,
-				67192EC42478400300219CAA /* ViewController.swift */,
 				67192EC62478400300219CAA /* Main.storyboard */,
 				67192ECC2478400500219CAA /* Assets.xcassets */,
 				67192ECE2478400500219CAA /* LaunchScreen.storyboard */,
@@ -68,6 +80,33 @@
 				67192EC92478400300219CAA /* DarkSkyAPISample.xcdatamodeld */,
 			);
 			path = DarkSkyAPISample;
+			sourceTree = "<group>";
+		};
+		67192EDD247862CE00219CAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67192ED82478620A00219CAA /* HourlyCollectionViewCell.swift */,
+				67192EDB2478627100219CAA /* DailyTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67192EDE247862D800219CAA /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+				67192EC42478400300219CAA /* ViewController.swift */,
+			);
+			path = Contoller;
+			sourceTree = "<group>";
+		};
+		67D6922F247864F700A8567C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				67D692302478656C00A8567C /* ViewContoller + Table.swift */,
+				67D692322478661300A8567C /* ViewContoller + Collection.swift */,
+				67D69234247867E800A8567C /* ViewController + Search.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +183,12 @@
 				67192EC52478400300219CAA /* ViewController.swift in Sources */,
 				67192EC12478400300219CAA /* AppDelegate.swift in Sources */,
 				67192ECB2478400300219CAA /* DarkSkyAPISample.xcdatamodeld in Sources */,
+				67D69235247867E800A8567C /* ViewController + Search.swift in Sources */,
+				67D692312478656C00A8567C /* ViewContoller + Table.swift in Sources */,
+				67192EDC2478627100219CAA /* DailyTableViewCell.swift in Sources */,
 				67192EC32478400300219CAA /* SceneDelegate.swift in Sources */,
+				67D692332478661300A8567C /* ViewContoller + Collection.swift in Sources */,
+				67192ED92478620A00219CAA /* HourlyCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
