@@ -16,6 +16,8 @@
 		67192ED02478400500219CAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67192ECE2478400500219CAA /* LaunchScreen.storyboard */; };
 		67192ED92478620A00219CAA /* HourlyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67192ED82478620A00219CAA /* HourlyCollectionViewCell.swift */; };
 		67192EDC2478627100219CAA /* DailyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67192EDB2478627100219CAA /* DailyTableViewCell.swift */; };
+		6722BE582479529F00D9342A /* ViewController + CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6722BE572479529F00D9342A /* ViewController + CoreLocation.swift */; };
+		6722BE5B2479549500D9342A /* DarkSkyStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6722BE5A2479549500D9342A /* DarkSkyStructure.swift */; };
 		67D692312478656C00A8567C /* ViewContoller + Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D692302478656C00A8567C /* ViewContoller + Table.swift */; };
 		67D692332478661300A8567C /* ViewContoller + Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D692322478661300A8567C /* ViewContoller + Collection.swift */; };
 		67D69235247867E800A8567C /* ViewController + Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D69234247867E800A8567C /* ViewController + Search.swift */; };
@@ -33,6 +35,8 @@
 		67192ED12478400500219CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67192ED82478620A00219CAA /* HourlyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyCollectionViewCell.swift; sourceTree = "<group>"; };
 		67192EDB2478627100219CAA /* DailyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTableViewCell.swift; sourceTree = "<group>"; };
+		6722BE572479529F00D9342A /* ViewController + CoreLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + CoreLocation.swift"; sourceTree = "<group>"; };
+		6722BE5A2479549500D9342A /* DarkSkyStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyStructure.swift; sourceTree = "<group>"; };
 		67D692302478656C00A8567C /* ViewContoller + Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewContoller + Table.swift"; sourceTree = "<group>"; };
 		67D692322478661300A8567C /* ViewContoller + Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewContoller + Collection.swift"; sourceTree = "<group>"; };
 		67D69234247867E800A8567C /* ViewController + Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + Search.swift"; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 		67192EBF2478400300219CAA /* DarkSkyAPISample */ = {
 			isa = PBXGroup;
 			children = (
+				6722BE592479545800D9342A /* Model */,
 				67192EDE247862D800219CAA /* Contoller */,
 				67192EDD247862CE00219CAA /* View */,
 				67D6922F247864F700A8567C /* Extensions */,
@@ -99,12 +104,21 @@
 			path = Contoller;
 			sourceTree = "<group>";
 		};
+		6722BE592479545800D9342A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6722BE5A2479549500D9342A /* DarkSkyStructure.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		67D6922F247864F700A8567C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				67D692302478656C00A8567C /* ViewContoller + Table.swift */,
 				67D692322478661300A8567C /* ViewContoller + Collection.swift */,
 				67D69234247867E800A8567C /* ViewController + Search.swift */,
+				6722BE572479529F00D9342A /* ViewController + CoreLocation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -182,8 +196,10 @@
 			files = (
 				67192EC52478400300219CAA /* ViewController.swift in Sources */,
 				67192EC12478400300219CAA /* AppDelegate.swift in Sources */,
+				6722BE5B2479549500D9342A /* DarkSkyStructure.swift in Sources */,
 				67192ECB2478400300219CAA /* DarkSkyAPISample.xcdatamodeld in Sources */,
 				67D69235247867E800A8567C /* ViewController + Search.swift in Sources */,
+				6722BE582479529F00D9342A /* ViewController + CoreLocation.swift in Sources */,
 				67D692312478656C00A8567C /* ViewContoller + Table.swift in Sources */,
 				67192EDC2478627100219CAA /* DailyTableViewCell.swift in Sources */,
 				67192EC32478400300219CAA /* SceneDelegate.swift in Sources */,

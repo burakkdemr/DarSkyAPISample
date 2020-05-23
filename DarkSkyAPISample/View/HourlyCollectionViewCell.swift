@@ -8,6 +8,9 @@
 
 import UIKit
 
+
 class HourlyCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var instantWeatherImg: UIImageView!
+    @IBOutlet weak var instantWeatherTempLbl: UILabel!
 }
