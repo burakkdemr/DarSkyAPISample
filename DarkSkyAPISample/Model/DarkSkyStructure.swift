@@ -38,6 +38,7 @@ struct CurrentResponse:Codable {
     let uvIndex: Int
     let visibility: Double
     let ozone: Double
+    
 }
 
 struct HourlyResponse:Codable{
@@ -48,7 +49,7 @@ struct HourlyResponse:Codable{
 struct HourlyData:Codable {
     let time: Int
     let summary: String
-    let icon: String
+    let icon: String?
     let precipIntensity: Float
     let precipProbability: Double
     let precipType: String?
@@ -64,6 +65,12 @@ struct HourlyData:Codable {
     let uvIndex: Int
     let visibility: Double
     let ozone: Double
+    
+    
+    var fahToCel:String{
+        let cell = String(format: "%.2f", (temperature - 32) * 5/9)
+        return cell
+    }
 }
 
 struct DailyResponse:Codable {
@@ -112,4 +119,13 @@ struct DailyData:Codable {
     let apparentTemperatureMinTime: Int
     let apparentTemperatureMax: Double
     let apparentTemperatureMaxTime: Int
+    
+    var highTemp:String{
+        let cell = String(format: "%.2f", (temperatureHigh - 32) * 5/9)
+        return cell
+    }
+    var lowTemp:String{
+           let cell = String(format: "%.2f", (temperatureLow - 32) * 5/9)
+           return cell
+       }
 }

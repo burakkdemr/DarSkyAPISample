@@ -1,0 +1,6 @@
+framework module Pods_DarkSkyAPISample {
+  umbrella header "Pods-DarkSkyAPISample-umbrella.h"
+
+  export *
+  module * { export * }
+}

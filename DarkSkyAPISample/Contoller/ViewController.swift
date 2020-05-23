@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var weatherForecast: UILabel!
     @IBOutlet weak var currentTemp: UILabel!
     
+    
     let locationManager = CLLocationManager()
     var currentLocation: CLLocation?
     
@@ -32,7 +33,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupDataSourcesAndDelegates()
-//        getWeatherDataForLocation()
     }
     
 
@@ -70,13 +70,34 @@ class ViewController: UIViewController {
             guard let result = self.weatherResponse else {return}
             
             let daily = result.daily.data
-            self.dailyWeather.append(contentsOf: daily!)
+//            self.dailyWeather.append(contentsOf: daily!)
+            self.dailyWeather = daily!
        
             let currently = result.currently
             self.currentWeather = currently
             
             let hourly = result.hourly.data
-            self.hourlyWeather.append(contentsOf: hourly!)
+//            self.hourlyWeather.append(contentsOf: hourly!)
+            self.hourlyWeather = hourly!
+            
+            let location = result.timezone
+            DispatchQueue.main.async {
+                 self.locationLbl.text = location
+            }
+           
+            let forecast = result.currently.summary
+            DispatchQueue.main.async {
+                self.weatherForecast.text = forecast
+            }
+            
+            let temp = result.currently.temperature
+            DispatchQueue.main.async {
+                var fahToCel:String{
+                        let cell = String(format: "%.2f", (temp - 32) * 5/9)
+                        return cell
+                    }
+                self.currentTemp.text = "\(fahToCel)℃"
+            }
             
             DispatchQueue.main.async {
                 self.tableView.reloadData()
